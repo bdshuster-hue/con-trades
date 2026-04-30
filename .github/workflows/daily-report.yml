@@ -25,4 +25,5 @@ jobs:
           RECIPIENT_EMAIL:    ${{ secrets.RECIPIENT_EMAIL }}
           LOOKBACK_DAYS:      "1"
           MIN_AMOUNT:         "250000"
+          FINNHUB_API_KEY:    ${{ secrets.FINNHUB_API_KEY }}
         run: python src/report.py
